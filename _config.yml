@@ -1,0 +1,15 @@
+# Site settings
+title: Max Nordlund's personal web log
+email: max.nordlund@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is where I put all my creative writing, and other such shenanigans.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://maxnordlund.github.io" # the base hostname & protocol for your site
+twitter_username: nevonnen
+github_username:  maxnorlund
+
+exclude: ["README.md", "LICENSE"]
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
