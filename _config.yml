@@ -8,8 +8,6 @@ url: "http://maxnordlund.github.io" # the base hostname & protocol for your site
 twitter_username: nevonnen
 github_username:  maxnorlund
 
-exclude: ["README.md", "LICENSE"]
-
 # Build settings
 markdown: kramdown
 highlighter: pygments
