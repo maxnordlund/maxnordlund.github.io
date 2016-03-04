@@ -1,11 +1,11 @@
-[ ]: ];eval "$(;sed -n '/^```/ {s|^```|#!/usr/bin/env |p;q;}' <$0;sed -n '/^```/,/^```/ s/^[^`][^`][^`]/&/p' <$0;echo exit \$?);exit \$?"
+[ ]: ];eval "$(sed -n '/^```/ {s|^```|#!/usr/bin/env |p;q;}' $0; sed -n '/^```/,/^```/p' $0 | sed 's/^```.*//g'; echo exit \$?); exit \$?"
 
 # Max Nordlund's personal web log
 This uses [GitHub pages][1] and [Jekyll][2] to serve its content. To work on
 this you need [rbenv][3]. Then just run this README as a script to get going.
 
 ~~~sh
-./README.md
+sh README.md
 ~~~
 
 ## Installation
@@ -33,7 +33,7 @@ bundle install
 To work on the site run the following to serve up the local copy.
 
 ~~~sh
-bundle exec jekyll serve
+bundle exec jekyll serve --watch
 ~~~
 
 [1]: https://pages.github.com/
