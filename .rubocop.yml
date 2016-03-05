@@ -1,0 +1,41 @@
+AllCops:
+  TargetRubyVersion: 2.1
+
+Style/AlignHash:
+  EnforcedHashRocketStyle: table
+
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/BlockDelimiters:
+  EnforcedStyle: semantic
+
+Style/BracesAroundHashParameters:
+  EnforcedStyle: context_dependent
+
+Style/CollectionMethods:
+  PreferredMethods:
+    collect: 'map'
+    collect!: 'map!'
+    inject: 'reduce'
+    detect: 'find'
+    select: 'find_all'
+
+Style/ExtraSpacing:
+  ForceEqualSignAlignment: true
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+Style/RegexpLiteral:
+  EnforcedStyle: mixed
+
+Style/SingleLineBlockParams:
+  Methods: {} # Disable single character parameters
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  ConsistentQuotesInMultiline: true
+
+Lint/AssignmentInCondition:
+  AllowSafeAssignment: false
