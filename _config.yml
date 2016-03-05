@@ -9,5 +9,12 @@ twitter_username: nevonnen
 github_username:  maxnordlund
 
 # Build settings
-markdown: kramdown
 highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude:
+  - LICENSE
+  - README.md
+  - Gemfile
+  - Gemfile.lock
