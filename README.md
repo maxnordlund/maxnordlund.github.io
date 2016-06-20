@@ -24,8 +24,10 @@ rbenv install --skip-existing "$(cat .ruby-version)"
 Once you have the correct Ruby you need [bundler][5] and you we're almost done.
 
 ```sh
-gem install bundler
-rbenv rehash
+if ! rbenv which bundler &> /dev/null; then
+  gem install bundler
+  rbenv rehash
+fi
 bundle install
 ```
 
